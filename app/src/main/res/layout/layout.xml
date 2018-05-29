@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mcxtzhang.swipemenulib.SwipeMenuLayout
+    android:id="@+id/swipemenu_Layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:clickable="true"
+    android:paddingBottom="1dp"
+    app:ios="false"
+    app:leftSwipe="true"
+    app:swipeEnable="true">
+
+    <!-- 这里是显示展示根布局，可以自由添加控件，点击触发事件在线性布局上-->
+    <LinearLayout
+        android:id="@+id/list_item"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            />
+
+    </LinearLayout>
+
+    <!-- 以下都是侧滑隐藏菜单的内容依序排列 -->
+    <Button
+        android:id="@+id/edit_bt"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:background="#ecd50a"
+        android:clickable="true"
+        android:text="编辑"
+        android:textColor="@android:color/white"/>
+
+    <Button
+        android:id="@+id/delete_bt"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:background="#FF4081"
+        android:text="删除"
+        android:textColor="@android:color/white"/>
+</com.mcxtzhang.swipemenulib.SwipeMenuLayout>
