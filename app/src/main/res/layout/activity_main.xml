@@ -1,14 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:DOAING="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
-
-    <android.support.v7.widget.RecyclerView
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+    <TextView
         android:id="@+id/test"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:gravity="center"
+        android:layout_height="60dp" />
+
+    <Button
+        android:id="@+id/start"
+        android:text="开始"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/end"
+        android:text="取消"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <verificationCodeInput.VerificationCodeInput
+        android:digits="1234567890"
+        android:id="@+id/verificationCodeInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        DOAING:box="4"
+        DOAING:box_bg_normal="@drawable/verification_edit_bg_normal"
+        DOAING:box_bg_focus="@drawable/verification_edit_bg_focus"
+        DOAING:child_h_padding="12dp"
+        android:layout_centerInParent="true"
+        />
 </LinearLayout>

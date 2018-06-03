@@ -77,7 +77,6 @@ public class CommonRecyclerAdapter extends RecyclerView.Adapter<CommonRecyclerAd
     public int getItemCount() {
         return this.mData != null ? this.mData.size() : 0;
     }
-
     protected class MyViewHolder extends android.support.v7.widget.RecyclerView.ViewHolder{
         Button deleteBt;
         Button editBt;
